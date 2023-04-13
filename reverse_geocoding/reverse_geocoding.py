@@ -10,7 +10,7 @@ for line in rdr:
     data.append(line)
 f.close()   
 address = []
-googlemaps_key = "AIzaSyCAAhXyRQ4sQneyM-tI_YM4Echx8j7x3PY"
+googlemaps_key = "secret key"
 gmaps = googlemaps.Client(key=googlemaps_key)
 for i in range(len(data)) :
     reverse_geocode_result = gmaps.reverse_geocode((float(data[i][1]), float(data[i][0])), language='ko')
